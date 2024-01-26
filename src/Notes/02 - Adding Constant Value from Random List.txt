@@ -1,0 +1,27 @@
+
+In this example, we defined a 
+
+{reactDescriptions[genRandomInt (2)]} the returned value is constant value selected randomaly from an array with maximum index of 2.
+if we set the geRandomInt to 1, it will only pick constants within the range of the first two value with index 0 and index 1
+
+
+
+const reactDescriptions = ['Fundamental', 'Crucial', 'Core']; //Array of Constant Values
+
+function genRandomInt(max) {
+  return Math.floor(Math.random() * (max + 1));
+}
+
+
+function App() {
+  return (
+    <div>
+      <main>
+      {reactDescriptions} [genRandomInt(2)] React Learning.
+        <h2>Time to get started!</h2>
+      </main>
+    </div>
+  );
+}
+
+export default App;

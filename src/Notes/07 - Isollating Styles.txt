@@ -1,0 +1,8 @@
+in order to isolate the Header component style, we need to create a new styling file for the Header file
+Then import it into the Header component of JSX type.
+
+Desktop - notification - email system with filters and flags - collection (app/or external)
+- pay-out:
+    Stripe method
+    PayPal method
+

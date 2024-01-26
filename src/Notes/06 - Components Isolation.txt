@@ -1,0 +1,20 @@
+The first step into clean coding, is to isolate components from the App.js
+to begin, we need to create a new component for each function. One of which is the Header function
+
+We begin the transfer by creating a separate component in the newly created Component folder.
+We call it Header.jsx and begin the function with [export default] so we can export the contents to the App.js file
+
+
+export default function Header() {
+    return (
+      <header>
+        <img src={reactImg} alt="Stylized atom" />
+        <h1>React Essentials</h1>
+        <p>
+          React concepts you will need for almost any app you are going to build!
+        </p>
+      </header>
+    );
+  }
+
+  Then we import the function into the App.js by adding the following line: [import Header from './components/Header.jsx';]

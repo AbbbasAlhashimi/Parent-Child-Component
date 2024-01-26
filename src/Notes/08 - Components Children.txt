@@ -1,0 +1,13 @@
+When we create a component an HTML component like Button and want to call its values, we need to use props.
+However, if we don't specify the props type as children, the values between the starting and ending tags will not be read.
+Therefore, we need to specify the passed on props children to allow the REACT to read the child contents of the HTML.
+
+
+export default function TabButton({children})
+{
+    return(
+    <li>
+        <button>{children}</button>
+    </li>
+);
+}

@@ -1,0 +1,26 @@
+instead of using props this way:
+
+ <CoreConcept
+              title = {CORE_CONCEPTS[0].title}
+              description = {CORE_CONCEPTS[0].description}
+              image = {CORE_CONCEPTS[0].image}
+            />
+
+
+We can use "..." to avoid mentioning the entire Hierarchy of the code
+
+ <CoreConcept {...CORE_CONCEPTS[0]} />
+
+
+ and we can Destruct the function parameters by initiating the parameters differently without the need to call props continuously.
+
+ function CoreConcept({image, title, description})
+{
+  return (
+    <li>
+      <img src ={image} alt={title} />
+      <h3>{title}</h3>
+      <p> {description}</p>
+    </li>
+  )
+}

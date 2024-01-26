@@ -1,0 +1,37 @@
+In this example, we created a component called "CoreConcept" and passed data via PROPS.
+The role of props is to pass data from parent "App" to the child "CoreConcept"
+
+We used Props to initialize data inputs to be inserted into the components separately.
+
+function CoreConcept(props)
+{
+  return (
+    <li>
+      <img src ={props.image} alt={props.title} />
+      <h3>{props.title}</h3>
+      <p> {props.description}</p>
+    </li>
+  )
+}
+
+function App() {
+  return (
+    <div>
+      <main>
+        <section id="core-concepts">
+          <h2> Core Concepts</h2>
+          <ul>
+
+
+            <CoreConcept />
+            <CoreConcept />
+            <CoreConcept />
+            <CoreConcept />
+          </ul>
+        </section>
+      </main>
+    </div>
+  );
+}
+
+export default App;

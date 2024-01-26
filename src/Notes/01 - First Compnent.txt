@@ -1,0 +1,26 @@
+In this example, we defined a function called Header that passes its contents via a <header> tag.
+To call the data from the function, we only call it by name.. and it values will be displayed instantly.
+
+
+function Header() {
+  return (
+    <header>
+      <img src={reactImg} alt="Stylized atom" />
+      <h1>React Essentials</h1>
+    </header>
+  );
+}
+
+
+function App() {
+  return (
+    <div>
+      <Header />
+      <main>
+        <h2>Time to get started!</h2>
+      </main>
+    </div>
+  );
+}
+
+export default App;
