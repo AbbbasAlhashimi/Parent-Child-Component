@@ -1,0 +1,19 @@
+A Great way to call components children and their children interactions, is via nested functions.
+In this example, we created an event handler per button click; that when pressed, the nested function with be triggered.
+
+
+export default function TabButton({children})
+{
+    function handleClick()
+    {
+        console.log("Hello World");
+    }
+    return(
+    <li>
+        <button onClick={handleClick}>{children}</button>
+        <button onClick={handleClick}>{children}</button>
+        <button onClick={handleClick}>{children}</button>
+        <button onClick={handleClick}>{children}</button>
+    </li>
+);
+}
