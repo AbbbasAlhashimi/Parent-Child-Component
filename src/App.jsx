@@ -5,9 +5,10 @@ import TabButton from './components/TabButton.jsx';
 
 function App() {
 
-  function handleSelect()
-  {
-      console.log('Hello World - Selected');
+  function handleSelect(selectedButton)
+  {//Operate as a Value Reader for the Component Child
+    //SelectedButton => 'components', 'jsx', 'props', 'state'
+      console.log(selectedButton);
   }
 
   return (
@@ -26,10 +27,18 @@ function App() {
         <section id='examples'>
         <h2>Examples</h2>
         <menu>
-          <TabButton onSelect={handleSelect}>Components</TabButton>
-          <TabButton onSelect={handleSelect}>JSX</TabButton>
-          <TabButton onSelect={handleSelect}>Props</TabButton>
-          <TabButton onSelect={handleSelect}>State</TabButton>
+
+        <TabButton title={CORE_CONCEPTS[0].title} onSelect={() => handleSelect(CORE_CONCEPTS[0].title)} />
+<TabButton title={CORE_CONCEPTS[1].title} onSelect={() => handleSelect(CORE_CONCEPTS[1].title)} />
+<TabButton title={CORE_CONCEPTS[2].title} onSelect={() => handleSelect(CORE_CONCEPTS[2].title)} />
+<TabButton title={CORE_CONCEPTS[3].title} onSelect={() => handleSelect(CORE_CONCEPTS[3].title)} />
+
+          {/*
+          <TabButton onSelect={() => handleSelect('Components')}>Components</TabButton>
+          <TabButton onSelect={() => handleSelect('JSX')}>JSX</TabButton>
+          <TabButton onSelect={() => handleSelect('Props')}>Props</TabButton>
+          <TabButton onSelect={() => handleSelect('State')}>State</TabButton>
+          */}
         </menu>
         Dynamic Content
         </section>
