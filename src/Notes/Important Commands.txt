@@ -2,4 +2,4 @@
 [2] Initialize GIT for uploading the project [git init]
 [3] Display all project directories [git add .]
 [4] Submit a comment [git commit -m "Initializing the project"]
-[5] Upload project to GitHub [git push --set-upstream https://github.com/AbbbasAlhashimi/Parent-Child-Component.git master]
+[5] Upload project to GitHub [git push repo_link_here]
